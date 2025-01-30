@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Living Lab</title>
+    <!-- daisyUI link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind link -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind script tag for customize  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              nabbarBg: "#FFF9F4",
+              yellowColor: "#FFDC26",
+              colorBg: "#F9DF8A",
+            },
+            fontFamily: {
+              soraFont: ["Sora", "serif"],
+              adLamDisplay: ["ADLaM Display", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- sora font -->
+    <!--   font-family: "Sora", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--ADLaM Display font  -->
+    <!--  font-family: "ADLaM Display", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <!-- nab bar section  -->
+      <nav class="bg-nabbarBg ">
+        <section class="items-center max-w-7xl mx-auto">
+          <div class="navbar font-soraFont">
+            <div class="navbar-start">
+              <div class="flex items-center">
+                <img class="mr-3" src="./c1-assets/logo-header.png" alt="" />
+                <h1 class="text-2xl">
+                  Browse<span class="text-yellowColor">4</span>Pets
+                </h1>
+              </div>
+            </div>
+
+            <div class="navbar-center hidden lg:flex lg:gap-8 text-xl">
+              <button>Find a pet</button>
+              <button>Breeds</button>
+              <button>Contact us</button>
+            </div>
+
+            <div class="navbar-end">
+              <!-- mobile menu bar -->
+              <button class="lg:hidden w-6 h-4">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <!-- large device buttons -->
+              <button class="btn btn-ghost btn-circle hidden lg:block">
+                <i class="fa-regular fa-bell"></i>
+              </button>
+              <button class="btn btn-ghost btn-circle hidden lg:block">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button class="btn border-2 hidden lg:block border-yellowColor">
+                Login
+              </button>
+              <button class="btn bg-yellowColor hidden ml-3 lg:block">
+                Register
+              </button>
+            </div>
+          </div>
+        </section>
+      </nav>
+    </header>
+    <!-- main section  -->
+    <main></main>
+    <!-- footer section  -->
+    <footer></footer>
+  </body>
+</html>
+
+<!-- colors: {
+              clifford: "#da373d",
+              nabbarBg: "#FFF9F4",
+              yellowColor: "#FFDC26",
+              colorBg: "#F9DF8A",
+            },
+            fontFamily: {
+              soraFont: ["Sora", "serif"],
+              adLamDisplay: ["ADLaM Display", "serif"],
+            }, -->
