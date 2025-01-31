@@ -102,11 +102,13 @@
           </div>
         </section>
       </nav>
+
       <hr class="block border-[0.5] border-black lg:hidden" />
+
       <!-- banner section  -->
       <section class="mt-16 max-w-7xl mx-auto">
         <div class="relative z-20 lg:z-10">
-          <h1 class="font-adLamDisplay text-3xl lg:text-6xl">
+          <h1 class="font-adLamDisplay text-3xl lg:text-6xl animate-pulse	">
             Pamper Your Pet,<br />
             Because They Deserve <br />the Bes
           </h1>
@@ -260,7 +262,7 @@
                   </div>
 
                   <div class="relative z-10 -top-4 -right-5">
-                    <img  src="./c1-assets/cute-pet-mid.png" alt="" />
+                    <img src="./c1-assets/cute-pet-mid.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -312,7 +314,11 @@
               <!-- card 4 -->
               <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
                 <div class="bg-nabbarBg rounded-xl">
-                  <img class="p-6" src="./c1-assets/rabbit-cartoon.png" alt="" />
+                  <img
+                    class="p-6"
+                    src="./c1-assets/rabbit-cartoon.png"
+                    alt=""
+                  />
                 </div>
                 <!-- card text  -->
                 <div>
@@ -354,7 +360,11 @@
               <!-- card 7 -->
               <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
                 <div class="bg-nabbarBg rounded-xl">
-                  <img class="p-6" src="./c1-assets/rabbit-cartoon.png" alt="" />
+                  <img
+                    class="p-6"
+                    src="./c1-assets/rabbit-cartoon.png"
+                    alt=""
+                  />
                 </div>
                 <!-- card text  -->
                 <div>
@@ -397,19 +407,121 @@
           </section>
         </section>
       </section>
+
+      <!-- Everyday low Price section -->
+      <section class="mt-36 max-w-7xl mx-auto">
+        <div>
+          <h1 class="text-4xl font-adLamDisplay mb-12">Everyday low Price</h1>
+        </div>
+
+        <!-- Everyday low Price cards -->
+        <section class="flex-none lg:flex lg:flex-row gap-4">
+          <!-- big card -->
+          <div class="rounded-xl border-2 border-black  bg-linear-to-r from-cyan-500 to-blue-500">
+            <div class="flex justify-between">
+              <div class="content-center ml-10 max-w-md">
+                <h4 class="font-soraFont text-xl">Under Price</h4>
+                <h1 class="font-adLamDisplay text-2xl lg:text-4xl">
+                  Pet Grooming Mitt
+                </h1>
+                <h1 class="font-adLamDisplay text-2xl text-white">
+                  (Easy Hair Removal)
+                </h1>
+                <h1 class="font-adLamDisplay text-6xl">$7.99</h1>
+              </div>
+              <div>
+                <img
+                  class="w-[200px] lg:w-full"
+                  src="./c1-assets/cute-dog-mid.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- small card -->
+          <div class="rounded-xl border-2 border-black pl-8 mt-2 lg:mt-0">
+            <div>
+              <h1 class="text-3xl font-adLamDisplay pt-14">T-Shirt for Dogs</h1>
+            </div>
+
+            <div class="flex justify-between">
+              <h1 class="font-adLamDisplay text-xl lg:text-6xl text-yellow-400">
+                $7.99
+              </h1>
+              <img
+                class="w-[200px] lg:w-auto"
+                src="./c1-assets/cute-pet-mid.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Get Pawsome News! section  -->
+      <section>
+        <section class="bg-nabbarBg max-w-7xl mx-auto rounded-lg p-7">
+          <div class="flex flex-col lg:flex-row items-center">
+            <div class="justify-center">
+              <img src="./c1-assets/cute-pet-mid.png" alt="" />
+            </div>
+
+            <div
+              class="space-y-5 flex-1 justify-center items-center text-center lg:text-left lg:items-start"
+            >
+              <h1 class="font-adLamDisplay text-3xl">Get Pawsome News!</h1>
+              <p class="font-soraFont">
+                Exclusive training tips, ticks, product deals and more.
+              </p>
+              <input
+                type="text"
+                placeholder="Enter email"
+                class="input input-lg w-full max-w-md"
+              />
+              <br />
+              <button class="btn text-xl bg-yellowColor">Subscribe</button>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
     <!-- footer section  -->
-    <footer></footer>
+
+    <section class="bg-colorBg">
+      <footer
+        class="footer bg-colorBg text-base-content p-10 max-w-7xl mx-auto font-soraFont"
+      >
+        <div>
+          <div class="flex items-center">
+            <img class="mr-3" src="./c1-assets/logo-footer.png" alt="" />
+            <h1 class="text-2xl">
+              Browse<span class="text-yellowColor">4</span>Pets
+            </h1>
+          </div>
+          <p>
+            Discover a world of treats, toys, and <br />
+            essentials handpicked for your furry <br />
+            friends
+          </p>
+        </div>
+        <div>
+          <ul class="navbar-center text-xl space-y-8">
+            <li>Find a pet</li>
+            <li>Breeds</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div class="pb-8">
+          <h6 class="text-black text-base	pt-5 lg:pt-20">Follow Us</h6>
+          <div class="grid grid-flow-col gap-4">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </footer>
+    </section>
+
   </body>
 </html>
-
-<!-- colors: {
-              clifford: "#da373d",
-              nabbarBg: "#FFF9F4",
-              yellowColor: "#FFDC26",
-              colorBg: "#F9DF8A",
-            },
-            fontFamily: {
-              soraFont: ["Sora", "serif"],
-              adLamDisplay: ["ADLaM Display", "serif"],
-            }, -->
