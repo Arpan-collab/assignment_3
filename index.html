@@ -57,13 +57,29 @@
       href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .card-bg-color {
+        background: linear-gradient(
+          134.71deg,
+          rgb(248, 204, 251) 1.286%,
+          rgb(172, 210, 253) 100%
+        );
+      }
+      .card-small-color {
+        background: linear-gradient(
+          134.71deg,
+          rgb(255, 249, 244) 1.511%,
+          rgb(249, 223, 138) 100%
+        );
+      }
+    </style>
   </head>
   <body>
     <!-- header section  -->
     <header>
       <!-- nab bar section  -->
       <nav class="bg-nabbarBg">
-        <section class="items-center max-w-7xl mx-auto">
+        <section class="items-center max-w-7xl lg:mx-auto m-3">
           <div class="navbar font-soraFont">
             <div class="navbar-start">
               <div class="flex items-center">
@@ -106,11 +122,14 @@
       <hr class="block border-[0.5] border-black lg:hidden" />
 
       <!-- banner section  -->
-      <section class="mt-16 max-w-7xl mx-auto">
-        <div class="relative z-20 lg:z-10">
-          <h1 class="font-adLamDisplay text-3xl lg:text-6xl animate-pulse	">
+      <section
+        class="mt-16 mb-3 lg:mb-20 max-w-7xl lg:mx-auto m-3 bg-no-repeat bg-center bg-contain h-screen"
+        style="background-image: url(./c1-assets/cat-big.png)"
+      >
+        <div>
+          <h1 class="font-adLamDisplay text-3xl lg:text-6xl animate-pulse">
             Pamper Your Pet,<br />
-            Because They Deserve <br />the Bes
+            Because They Deserve <br />the Best
           </h1>
           <p class="pt-4 font-soraFont text-base lg:text-xl text-[#111111B3]">
             Discover a world of treats, toys, and essentials handpicked for
@@ -121,17 +140,13 @@
             Find a pet
           </button>
         </div>
-        <!-- big cat image -->
-        <div class="relative -top-36 lg:-top-[370px]">
-          <img src="./c1-assets/cat-big.png" alt="" />
-        </div>
       </section>
     </header>
 
     <!-- main section  -->
     <main>
       <!-- Browse by catagorie section  -->
-      <section class="max-w-7xl mx-auto mb-32">
+      <section class="max-w-7xl m-3 lg:mx-auto mb-32">
         <div class="mb-12">
           <h1 class="text-4xl font-adLamDisplay">Browse By Categories</h1>
         </div>
@@ -236,21 +251,61 @@
         </section>
       </section>
 
+      <!-- custom pet section -->
+      <section
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between mb-14"
+      >
+        <!-- our service container -->
+        <div class="content-center mx-auto">
+          <h1 class="text-6xl font-bold font-adLamDisplay pb-2">
+            Our Services
+          </h1>
+          <p class="text-xl pb-2 font-semibold">
+            As a team of experienced pet owners and lovers, <br />We really get
+            to know you and your pet.
+          </p>
+          <div>
+            <ul class="space-y-3">
+              <li>
+                <i class="fa-solid fa-check text-xl pr-2"></i>Treatment for
+                heart related diseases
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-xl pr-2"></i>Broken bone
+                treatment
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-xl pr-2"></i>Medical treatment
+                for disorders
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- image container -->
+        <div class="content-center mx-auto mt-10 lg:mt-0">
+          <img
+            src="https://helios-i.mashable.com/imagery/articles/03xrF9kkxvucwQ4Ei4Ag6cu/images-7.fill.size_1400x933.v1646058414.jpg"
+            alt=""
+            class="max-w-lg rounded-3xl"
+          />
+        </div>
+      </section>
+
       <!-- Trending Pet Products section -->
       <section class="bg-nabbarBg">
         <!-- Trending Pet Products cards -->
-        <section class="max-w-7xl mx-auto py-36">
+        <section class="max-w-7xl m-3 lg:mx-auto py-36">
           <div class="mb-12">
             <h1 class="font-adLamDisplay text-4xl">Trending Pet Products</h1>
           </div>
           <!-- Trending Pet Products Card container -->
           <section class="block lg:flex gap-5">
             <!-- big card container -->
-            <div class="w/4/12">
+            <div class="lg:w-4/12">
               <!-- big card -->
               <div class="bg-colorBg rounded-xl">
                 <div class="p-4">
-                  <div class="relative">
+                  <div>
                     <h1 class="text-4xl font-adLamDisplay mt-20">
                       T-Shirt For Dogs
                     </h1>
@@ -258,19 +313,23 @@
                       Discover a world of toys and <br />
                       essentials handpicked for Your Dog
                     </p>
-                    <button class="mt-4 btn bg-white">Shop Now</button>
-                  </div>
+                    <div class="flex">
 
-                  <div class="relative z-10 -top-4 -right-5">
-                    <img src="./c1-assets/cute-pet-mid.png" alt="" />
+                      <button class="mt-4 btn bg-white">Shop Now</button>
+                      <div>
+                        <img src="./c1-assets/cute-pet-mid.png" alt="">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- small cards container -->
-            <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 flex-1">
               <!-- card 1 -->
-              <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
+              <div
+                class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center flex-1"
+              >
                 <div class="bg-nabbarBg rounded-xl">
                   <img class="p-6" src="./c1-assets/dog-cartoon.png" alt="" />
                 </div>
@@ -284,7 +343,9 @@
                 </div>
               </div>
               <!-- card 2 -->
-              <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
+              <div
+                class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center flex-1"
+              >
                 <div class="bg-nabbarBg rounded-xl">
                   <img class="p-6" src="./c1-assets/fish-cartoon.png" alt="" />
                 </div>
@@ -298,7 +359,9 @@
                 </div>
               </div>
               <!-- card 3 -->
-              <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
+              <div
+                class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center flex-1"
+              >
                 <div class="bg-nabbarBg rounded-xl">
                   <img class="p-6" src="./c1-assets/bird-cartoon.png" alt="" />
                 </div>
@@ -312,7 +375,9 @@
                 </div>
               </div>
               <!-- card 4 -->
-              <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
+              <div
+                class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center flex-1"
+              >
                 <div class="bg-nabbarBg rounded-xl">
                   <img
                     class="p-6"
@@ -330,7 +395,9 @@
                 </div>
               </div>
               <!-- card 5 -->
-              <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
+              <div
+                class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center flex-1"
+              >
                 <div class="bg-nabbarBg rounded-xl">
                   <img class="p-6" src="./c1-assets/bird-cartoon.png" alt="" />
                 </div>
@@ -344,7 +411,9 @@
                 </div>
               </div>
               <!-- card 6 -->
-              <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
+              <div
+                class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center flex-1"
+              >
                 <div class="bg-nabbarBg rounded-xl">
                   <img class="p-6" src="./c1-assets/cat-cartoon.png" alt="" />
                 </div>
@@ -358,7 +427,9 @@
                 </div>
               </div>
               <!-- card 7 -->
-              <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
+              <div
+                class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center flex-1"
+              >
                 <div class="bg-nabbarBg rounded-xl">
                   <img
                     class="p-6"
@@ -376,7 +447,9 @@
                 </div>
               </div>
               <!-- card 8 -->
-              <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
+              <div
+                class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center flex-1"
+              >
                 <div class="bg-nabbarBg rounded-xl">
                   <img class="p-6" src="./c1-assets/dog-cartoon.png" alt="" />
                 </div>
@@ -390,7 +463,9 @@
                 </div>
               </div>
               <!-- card 9 -->
-              <div class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center">
+              <div
+                class="bg-[#FFFFFF] rounded-xl flex p-4 gap-4 items-center flex-1"
+              >
                 <div class="bg-nabbarBg rounded-xl">
                   <img class="p-6" src="./c1-assets/dog-cartoon.png" alt="" />
                 </div>
@@ -409,7 +484,7 @@
       </section>
 
       <!-- Everyday low Price section -->
-      <section class="mt-36 max-w-7xl mx-auto">
+      <section class="mt-36 max-w-7xl m-3 lg:mx-auto">
         <div>
           <h1 class="text-4xl font-adLamDisplay mb-12">Everyday low Price</h1>
         </div>
@@ -417,7 +492,7 @@
         <!-- Everyday low Price cards -->
         <section class="flex-none lg:flex lg:flex-row gap-4">
           <!-- big card -->
-          <div class="rounded-xl border-2 border-black  bg-linear-to-r from-cyan-500 to-blue-500">
+          <div class="rounded-xl card-bg-color">
             <div class="flex justify-between">
               <div class="content-center ml-10 max-w-md">
                 <h4 class="font-soraFont text-xl">Under Price</h4>
@@ -439,7 +514,7 @@
             </div>
           </div>
           <!-- small card -->
-          <div class="rounded-xl border-2 border-black pl-8 mt-2 lg:mt-0">
+          <div class="rounded-xl card-small-color pl-8 mt-2 lg:mt-0">
             <div>
               <h1 class="text-3xl font-adLamDisplay pt-14">T-Shirt for Dogs</h1>
             </div>
@@ -459,8 +534,8 @@
       </section>
 
       <!-- Get Pawsome News! section  -->
-      <section>
-        <section class="bg-nabbarBg max-w-7xl mx-auto rounded-lg p-7">
+      <section class="relative -bottom-50 z-10">
+        <section class="bg-nabbarBg max-w-7xl m-3 lg:mx-auto rounded-lg p-7">
           <div class="flex flex-col lg:flex-row items-center">
             <div class="justify-center">
               <img src="./c1-assets/cute-pet-mid.png" alt="" />
@@ -485,14 +560,14 @@
         </section>
       </section>
     </main>
-    <!-- footer section  -->
 
+    <!-- footer section  -->
     <section class="bg-colorBg">
       <footer
-        class="footer bg-colorBg text-base-content p-10 max-w-7xl mx-auto font-soraFont"
+        class="footer bg-colorBg text-base-content max-w-7xl lg:mx-auto m-3 font-soraFont lg:pt-60"
       >
         <div>
-          <div class="flex items-center">
+          <div class="flex items-center pt-64 lg:pt-0">
             <img class="mr-3" src="./c1-assets/logo-footer.png" alt="" />
             <h1 class="text-2xl">
               Browse<span class="text-yellowColor">4</span>Pets
@@ -512,7 +587,7 @@
           </ul>
         </div>
         <div class="pb-8">
-          <h6 class="text-black text-base	pt-5 lg:pt-20">Follow Us</h6>
+          <h6 class="text-black text-base pt-5 lg:pt-20">Follow Us</h6>
           <div class="grid grid-flow-col gap-4">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -522,6 +597,5 @@
         </div>
       </footer>
     </section>
-
   </body>
 </html>
